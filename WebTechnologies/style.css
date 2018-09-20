@@ -1,3 +1,8 @@
+img *{
+	max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Hind', sans-serif;
 }
@@ -53,11 +58,14 @@ article {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-flow: row wrap;
     background-color: #f1f1f1;
     padding: 10px;
 }
 
-
+.kot{
+	height:300px;
+}
 
 footer {
     background-color: #a15fe3;
@@ -66,8 +74,13 @@ footer {
     color: white;
 }
 
+
 @media (max-width: 600px) {
     #main_container {
         flex-direction: column;
     }
+    .text{
+    	width:100%;
+    }
+
 }
