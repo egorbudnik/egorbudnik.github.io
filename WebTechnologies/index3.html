@@ -2,11 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8"> 
-<title>Lr_2</title>
+<title>2 + 2</title>
 </head>
 <body>
 <header>
-<h1> Лаб 2. Исправить ошибку в формуле Видмарка</h1>
+<h1> Сложение</h1>
 </header>
 <input type = "text" id = "txtA" value = "2" size = "2"/>
   +
@@ -14,12 +14,6 @@
   <button type = "button" onclick = "Sum()"> =</button>
   <input type = "text" id = "demo" value = "" size = "2"/><br />
 
-  <p>Шведский химик Эрик Видмарк разработал следующую формулу для определения максимальных теоретически возможных концентраций этанола в крови: <b>c = A / (m * r)</b></p>
-     <span>C </span><button type = "button" onclick = "Vid()"> =</button>
-     <input type="text" id = "c_alko" value = "" size = "2"/><br> 
-  <p>Введите А - массу выпитого напитка (в граммах): </p><input type = "text" id = "mas_drink" value = "" size = "3"/><br>
-  <p>Введите m - массу тела: </p><input type = "text" id = "mass" value = "" size = "3"/><br>
-  <p>Введите r - коэффициент распределения Видмарка (0,7 - для мужчин, 0,6 - для женщин): </p><input type = "text" id = "k" value = "" size = "3"/><br>
 <script>
   function Sum() {
         var a;
@@ -29,17 +23,6 @@
         var c;
         c = a + b;
         demo.value = c;
-    }
-
-    function Vid() {
-        var a;
-        var m;
-        var r;
-        a = parseInt(mas_drink.value);
-        m = parseInt(mass.value);
-        r = Number(k.value);
-        c = a / (m * r);
-        c_alko.value = c;
     }
 </script>
 </body>

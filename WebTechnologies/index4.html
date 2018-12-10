@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>Formula Vidmarka</title>
+</head>
+<body>
+<header>
+<h1> Лаб 2. Исправить ошибку в формуле Видмарка</h1>
+</header>
+  <p>Шведский химик Эрик Видмарк разработал следующую формулу для определения максимальных теоретически возможных концентраций этанола в крови: <b>c = A / (m * r)</b></p>
+      
+  <p>Введите А - массу выпитого напитка (в граммах): </p><input type = "text" id = "mas_drink" value = "" size = "3"/><br>
+  <p>Введите m - массу тела: </p><input type = "text" id = "mass" value = "" size = "3"/><br>
+  <p>Введите r - коэффициент распределения Видмарка (0,7 - для мужчин, 0,6 - для женщин): </p><input type = "text" id = "k" value = "" size = "3"/><br><br>
+  <span>C </span><button type = "button" onclick = "Vid()"> =</button> <input type="text" id = "c_alko" value = "" size = "2"/>
+<script>
+    function Vid() {
+        var a;
+        var m;
+        var r;
+        a = parseInt(mas_drink.value);
+        m = parseInt(mass.value);
+        r = Number(k.value);
+        c = a / (m * r);
+        c_alko.value = c;
+    }
+</script>
+</body>
+</html>
