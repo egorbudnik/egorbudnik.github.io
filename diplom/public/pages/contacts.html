@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Контактная информация</title>
+    <link rel="shortcut icon" href="../images/favicons/favicon.ico" type="image/x-icon">
+    <link href="../templates/eco/css/app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-white navbar-main">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <span><b>ООО "ЭкоРисайклинг"</b></span>
+                </a>
+                <div class="d-none d-md-block ml-auto mr-5">
+                    <ul class="nav  header-top__menu">
+                        <li class="nav-item"><a class="nav-link" href="company.html">О компании</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-right navbar-phone">
+                    <a class="phone nav-link" href="tel:+375294751254">
+                        <span class="d-none d-lg-block">+375 29 475-12-54</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-nav">
+            <div class="navbar-nav-scroll">
+                <div class="container">
+                    <ul class="nav navbar-second__nav">
+                        <li>
+                            <a class="subtop-menu__first-item nav-link" href="utilizaciya.html">Утилизация отходов <b class="caret"></b></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="obrabotka.html">Обработка помещений</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transportirovka.html">Транспортировка отходов</a></li>
+                        <li class="nav-item"><a class="nav-link" href="proektirovanie.html">Экологическое проектирование</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="item-page">
+            <div class="hero">
+                <div class="container">
+                    <h1>Контакты</h1>
+                </div>
+            </div>
+            <div class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 d-none d-sm-block">
+                            <div class="alert">Ваше сообщение отправлено</div>
+                            <h3 class="adress_h3">Напишите нам</h3>
+                            <p class="light small">Вы можете отправить нам сообщение, используя форму ниже. Все сообщения обрабатываются.</p>
+                            <div class="form__contacts  m_form_content">
+                                <div class="moduletable">
+                                    <div class="custom">
+                                        <form id="form_contacts">
+                                            <div class="form-row">
+                                                <div class="form-group col-sm-6">
+                                                    <label for="name">Имя</label>
+                                                    <input type="text" class="form-control" id="name" name="name" required>
+                                                </div>
+                                                <div class="form-group col-sm-6">
+                                                    <label for="email">Эл. почта</label>
+                                                    <input type="email" class="form-control" id="email" name="email" required>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="title">Тема сообщения</label>
+                                                <div class="row">
+                                                    <div class="col-sm-8">
+                                                        <select class="form-control" id="title" name="title" required>
+                                                            <option disabled selected value="">Выберите вариант</option>
+                                                            <option>Утилизация отходов</option>
+                                                            <option>Обработка помещений</option>
+                                                            <option>Транспортные услуги</option>
+                                                            <option>Сотрудничество</option>
+                                                            <option>Другое</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="body">Сообщение</label>
+                                                <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                                            </div>
+                                            <button class="btn btn-green" type="submit">Отправить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-1">
+                            <div class="adress">
+                                <h3>Адрес</h3>
+                                <p><i class="fa fa-map-marker"></i> г. Минск, ул. Скрыганова д.6, офис 411А</p>
+                                <p><i class="fa fa-envelope"></i> <a href="mailto:zakaz@ecowastegroup.ru">zakaz@ecorisaikling.by</a>
+                                </p>
+                                <p><i class="fa fa-clock-o"></i></i> Пн-Пт с 10-00 до 18-00</p>
+                                <p> </p>
+                                <h3>Телефоны</h3>
+                                <div class="phones-block">
+                                    <i class="fa fa-phone"></i>
+                                    <p>Прием заявок/заказов<br><span class='phone'>+375 29 475-12-54</span></p>
+                                    <p> Факс для заявок/заказов<br>+375 29 518-24-53<br><span class="small">(круглосуточно, в автоматическом режиме)</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="location_map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Afb518fe9d4e1284d5c23e167f57ad881302c96d2934fe6aebbc0a44c7dc75c18&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__links">
+                <div class="footer__tile">
+                    <ul class="nav -footer">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                        <li class="nav-item"><a class="nav-link" href="utilizaciya.html">Утилизация отходов</a></li>
+                        <li class="nav-item"><a class="nav-link" href="obrabotka.html">Обработка помещений</a></li>
+                        <li class="nav-item"><a class="nav-link" href="transportirovka.html">Транспортировка отходов</a></li>
+                        <li class="nav-item"><a class="nav-link" href="company.html">О компании</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <a class="phone footer__contacts-phone" href="tel:+375294751254">+375 29 475-12-54</a>
+                <a class="footer__contacts-email" href="mailto:zakaz@ecowastegroup.ru">zakaz@ecorisaikling.by</a>
+            </div>
+            <div class="footer__copyright">
+                <div class="copy">
+                    <p>© ООО «ЭкоРисайклинг», 2007-2019, УНП 191436541</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script type="text/javascript" src="../templates/eco/js/app.js"></script>
+</body>
+
+</html>
